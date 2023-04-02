@@ -25,7 +25,7 @@ function AppLoadingPage() {
   return (
     <SafeAreaView style={styles.container}>
       <TouchableWithoutFeedback onPress={handleLogoPress} onLongPress={handleLogoLongPress}>
-        <Image style={styles.logo} source={require("../../assets/appLogo.png")}/>  
+        <Image style={styles.logo} source={require("../assets/appLogo.png")}/>  
       </TouchableWithoutFeedback>
       <Text style={styles.title} onPress={handleTitlePress}>Welcome to Mobile Planner!</Text>
       <Text style={styles.subtitle} onPress={handleSubTitlePress}>Let's make great plans!</Text>

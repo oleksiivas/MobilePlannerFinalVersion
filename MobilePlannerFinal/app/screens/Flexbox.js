@@ -7,18 +7,23 @@ export default function FlexScreen() {
             backgroundColor: "#fff",
             flex: 1,
             flexDirection: 'row',
-            justifyContent: 'center',
-            alignItems: 'center'
+            justifyContent: 'center', //main axis
+            alignItems: 'center', // secondary axis
+            flexWrap: "wrap",
+            alignContent: "center"
         }}>
             <View style={{
                 backgroundColor: "dodgerblue",
                 width: 100,
-                height: 300
+                height: 100
             }} />
             <View style={{
                 backgroundColor: "gold",
                 width: 100,
-                height: 200
+                height: 100,
+                top: 20,
+                left: 20,
+                position: "absolute"
             }} />
             <View style={{
                 backgroundColor: "tomato",

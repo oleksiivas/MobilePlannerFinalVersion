@@ -1,4 +1,14 @@
-import React from 'react';
+
+
+import { StyleSheet,
+        Text,
+        Image,
+        SafeAreaView,
+        TouchableWithoutFeedback,
+        Button,
+        Alert,
+        View } from 'react-native';
+
 
 function AppLoadingPage() {
     
@@ -16,15 +26,30 @@ function AppLoadingPage() {
   return (
     <SafeAreaView style={styles.container}>
       <TouchableWithoutFeedback onPress={handleLogoPress} onLongPress={handleLogoLongPress}>
-        <Image style={styles.logo} source={require("./assets/appLogo.png")}/>  
+        <Image style={styles.logo} source={require("../../assets/appLogo.png")}/>  
       </TouchableWithoutFeedback>
       <Text style={styles.title} onPress={handleTitlePress}>Welcome to Mobile Planner!</Text>
       <Text style={styles.subtitle} onPress={handleSubTitlePress}>Let's make great plans!</Text>
       
-      <Button 
-        color="orange" 
-        title='Get Alert' 
-        onPress={pressButton}/>
+      <View style={{
+        flexDirection: 'row',
+        justifyContent: 'space-between'
+        // alignItems: 'flex-end'
+      }}>
+        <View>
+        <Button 
+        color="dodgerblue" 
+        title='Change Credentials' 
+        onPress={pressButton}/></View>
+
+        <View>
+        <Button 
+        color="tomato" 
+        title='Proceed to Home Page' 
+        onPress={pressButton}/></View>
+
+      </View>
+
     </SafeAreaView>
   );
 }

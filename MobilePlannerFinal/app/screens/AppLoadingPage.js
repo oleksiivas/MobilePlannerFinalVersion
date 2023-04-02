@@ -1,11 +1,10 @@
 
-
+import AppButton from "../components/Button"
 import { StyleSheet,
         Text,
         Image,
         SafeAreaView,
         TouchableWithoutFeedback,
-        Button,
         Alert,
         View } from 'react-native';
 
@@ -32,19 +31,12 @@ function AppLoadingPage() {
       <Text style={styles.subtitle} onPress={handleSubTitlePress}>Let's make great plans!</Text>
       
       <View style={{
-        flexDirection: 'row',
+        flexDirection: 'column',
         justifyContent: 'space-between'
         // alignItems: 'flex-end'
       }}>
         <View>
-        <Button 
-        color="dodgerblue" 
-        title='Change Credentials' 
-        onPress={pressButton}/></View>
-
-        <View>
-        <Button 
-        color="tomato" 
+        <AppButton 
         title='Proceed to Home Page' 
         onPress={pressButton}/></View>
 

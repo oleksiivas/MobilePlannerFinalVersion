@@ -19,10 +19,6 @@ function MainMenuPage() {
       }}>
 
         <View>
-            
-        </View>
-
-        <View>
         <AppButton 
         title='Three week Plans' 
         onPress={handlePlansButton}/></View>

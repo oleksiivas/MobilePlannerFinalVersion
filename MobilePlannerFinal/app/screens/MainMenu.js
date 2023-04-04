@@ -1,4 +1,4 @@
-import AppButton from "../components/Button"
+import AppButton from "../components/AppButton";
 import { View } from 'react-native';
 
 function MainMenuPage() {

@@ -1,15 +1,14 @@
-import { View, Text} from "react-native";
-import AppLoadingPage from "./app/screens/AppLoadingPage";
-import FlexBox from "./app/screens/Flexbox";
-import MainMenuPage from "./app/screens/MainMenu";
-import WelcomeScreen from "./app/screens/WelcomeScreen";
-import ViewImageScreen from "./app/screens/ViewImageScreen";
+import React from "react";
+import { NavigationContainer } from "@react-navigation/native";
+
+import navigationTheme from "./app/navigation/navigationTheme";
+import AppNavigator from "./app/navigation/AppNavigator";
+import AuthNavigator from "./app/navigation/AuthNavigator";
 
 export default function App() {
-
   return (
-
-    <ViewImageScreen />
-
+    <NavigationContainer theme={navigationTheme}>
+      <AuthNavigator />
+    </NavigationContainer>
   );
 }

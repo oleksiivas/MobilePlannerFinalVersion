@@ -1,14 +1,18 @@
 import React from 'react';
 import colors from '../config/colors';
+import AppButton from "../components/Button";
+import routes from "../navigation/routes";
+
 import { ImageBackground,
          StyleSheet,
          View,
          Image,
          Text } from 'react-native';
 
-function WelcomeScreen(props) {
+function WelcomeScreen({ navigation }) {
     return (
         <ImageBackground
+            blurRadius={5}
             style={styles.background}
             source={require("../assets/background1.jpg")}>
         
@@ -17,8 +21,12 @@ function WelcomeScreen(props) {
             <Text style={styles.title}>Let's make great plans!</Text>
         </View>
 
-        <View style={styles.loginButton}></View>
-        <View style={styles.registerButton}></View>
+        <AppButton title="Login"
+            onPress={() => navigation.navigate(routes.LOGIN)} />
+        <AppButton title="Register"
+            onPress={() => navigation.navigate(routes.REGISTER)} color='black' />
+        <AppButton title="Proceed to Home Page"
+            onPress={() => navigation.navigate(routes.LISTINGS)} color='secondary' />
         </ImageBackground>
     );
 }
@@ -28,16 +36,6 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: "flex-end",
         alignItems: "center"
-    },
-    loginButton: {
-        width: "100%",
-        height: 80,
-        backgroundColor: colors.blue
-    },
-    registerButton: {
-        width: "100%",
-        height: 80,
-        backgroundColor: colors.black
     },
     logo : {
         width: 200,

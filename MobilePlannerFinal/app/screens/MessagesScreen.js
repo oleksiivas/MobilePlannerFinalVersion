@@ -22,6 +22,27 @@ const initialMessages = [
       "Romans 15:13 \n  Now the God of hope fill you with all joy and peace in believing, that ye may abound in hope, through the power of the Holy Ghost.",
     image: require("../assets/me.jpg"),
   },
+  {
+    id: 3,
+    title: "Alex Vasiuk",
+    description:
+      "Philippians 4:6 \n  Be careful for nothing; but in everything by prayer and supplication with thanksgiving let your requests be made known unto God.",
+    image: require("../assets/me.jpg"),
+  },
+  {
+    id: 4,
+    title: "Alex Vasiuk",
+    description:
+      "Joshua 1:9 \n  Have not I commanded thee? Be strong and of a good courage; be not afraid, neither be thou dismayed: for the lord thy God is with thee whithersoever thou goest.",
+    image: require("../assets/me.jpg"),
+  },
+  {
+    id: 5,
+    title: "Alex Vasiuk",
+    description:
+      "Proverbs 3:5-6 \n  Trust in the Lord with all thine heart; and lean not unto thine own understanding. In all thy ways acknowledge him, and he shall direct thy paths.",
+    image: require("../assets/me.jpg"),
+  },
 ];
 
 function MessagesScreen(props) {

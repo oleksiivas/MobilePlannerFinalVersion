@@ -98,7 +98,7 @@ function ListingEditScreen() {
         <FormField maxLength={255} name="title" placeholder="Title" />
         <FormField
           keyboardType="numeric"
-          maxLength={8}
+          maxLength={60}
           name="dates"
           placeholder="Dates"
           width={120}
